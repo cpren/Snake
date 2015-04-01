@@ -5,7 +5,7 @@
         <field name="VAR">y</field>
         <value name="VALUE">
           <block type="math_number" id="3">
-            <field name="NUM">20</field>
+            <field name="NUM">50</field>
           </block>
         </value>
         <next>
