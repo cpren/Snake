@@ -108,27 +108,23 @@
                                               </block>
                                             </value>
                                             <statement name="DO">
-                                              <block type="oled_cleardisplay" id="362">
-                                                <next>
-                                                  <block type="variables_set" id="241" inline="true">
-                                                    <field name="VAR">x</field>
-                                                    <value name="VALUE">
-                                                      <block type="math_arithmetic" id="269" inline="true">
-                                                        <field name="OP">ADD</field>
-                                                        <value name="A">
-                                                          <block type="variables_get" id="291">
-                                                            <field name="VAR">x</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="B">
-                                                          <block type="math_number" id="298">
-                                                            <field name="NUM">1</field>
-                                                          </block>
-                                                        </value>
+                                              <block type="variables_set" id="241" inline="true">
+                                                <field name="VAR">x</field>
+                                                <value name="VALUE">
+                                                  <block type="math_arithmetic" id="269" inline="true">
+                                                    <field name="OP">ADD</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="291">
+                                                        <field name="VAR">x</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="298">
+                                                        <field name="NUM">1</field>
                                                       </block>
                                                     </value>
                                                   </block>
-                                                </next>
+                                                </value>
                                               </block>
                                             </statement>
                                           </block>
