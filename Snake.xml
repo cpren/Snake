@@ -35,88 +35,92 @@
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="oled_setcursor" id="27" inline="true">
-                            <value name="STARTX">
-                              <block type="variables_get" id="144">
-                                <field name="VAR">x</field>
-                              </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="variables_get" id="150">
-                                <field name="VAR">y</field>
-                              </block>
-                            </value>
+                          <block type="oled_cleardisplay" id="320">
                             <next>
-                              <block type="oled_setend" id="59" inline="true">
-                                <value name="ENDX">
-                                  <block type="math_arithmetic" id="157" inline="true">
-                                    <field name="OP">ADD</field>
-                                    <value name="A">
-                                      <block type="variables_get" id="185">
-                                        <field name="VAR">x</field>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="variables_get" id="199">
-                                        <field name="VAR">size</field>
-                                      </block>
-                                    </value>
+                              <block type="oled_setcursor" id="27" inline="true">
+                                <value name="STARTX">
+                                  <block type="variables_get" id="144">
+                                    <field name="VAR">x</field>
                                   </block>
                                 </value>
-                                <value name="ENDY">
-                                  <block type="math_arithmetic" id="214" inline="true">
-                                    <field name="OP">ADD</field>
-                                    <value name="A">
-                                      <block type="variables_get" id="207">
-                                        <field name="VAR">y</field>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="variables_get" id="222">
-                                        <field name="VAR">size</field>
-                                      </block>
-                                    </value>
+                                <value name="STARTY">
+                                  <block type="variables_get" id="150">
+                                    <field name="VAR">y</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_linerect" id="18">
-                                    <field name="OBJECT">RECT</field>
-                                    <next>
-                                      <block type="controls_if" id="248" inline="false">
-                                        <value name="IF0">
-                                          <block type="sensor_button" id="255">
-                                            <field name="OBJECT">DOWN</field>
+                                  <block type="oled_setend" id="59" inline="true">
+                                    <value name="ENDX">
+                                      <block type="math_arithmetic" id="157" inline="true">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="185">
+                                            <field name="VAR">x</field>
                                           </block>
                                         </value>
-                                        <statement name="DO0">
-                                          <block type="controls_repeat" id="276" inline="true">
-                                            <value name="TIMES">
-                                              <block type="math_number" id="283">
-                                                <field name="NUM">5</field>
+                                        <value name="B">
+                                          <block type="variables_get" id="199">
+                                            <field name="VAR">size</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="ENDY">
+                                      <block type="math_arithmetic" id="214" inline="true">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="207">
+                                            <field name="VAR">y</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="variables_get" id="222">
+                                            <field name="VAR">size</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="oled_linerect" id="18">
+                                        <field name="OBJECT">RECT</field>
+                                        <next>
+                                          <block type="controls_if" id="248" inline="false">
+                                            <value name="IF0">
+                                              <block type="sensor_button" id="255">
+                                                <field name="OBJECT">DOWN</field>
                                               </block>
                                             </value>
-                                            <statement name="DO">
-                                              <block type="variables_set" id="241" inline="true">
-                                                <field name="VAR">x</field>
-                                                <value name="VALUE">
-                                                  <block type="math_arithmetic" id="269" inline="true">
-                                                    <field name="OP">ADD</field>
-                                                    <value name="A">
-                                                      <block type="variables_get" id="291">
-                                                        <field name="VAR">x</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="B">
-                                                      <block type="math_number" id="298">
-                                                        <field name="NUM">1</field>
+                                            <statement name="DO0">
+                                              <block type="controls_repeat" id="276" inline="true">
+                                                <value name="TIMES">
+                                                  <block type="math_number" id="283">
+                                                    <field name="NUM">5</field>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO">
+                                                  <block type="variables_set" id="241" inline="true">
+                                                    <field name="VAR">x</field>
+                                                    <value name="VALUE">
+                                                      <block type="math_arithmetic" id="269" inline="true">
+                                                        <field name="OP">ADD</field>
+                                                        <value name="A">
+                                                          <block type="variables_get" id="291">
+                                                            <field name="VAR">x</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="298">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
                                                       </block>
                                                     </value>
                                                   </block>
-                                                </value>
+                                                </statement>
                                               </block>
                                             </statement>
                                           </block>
-                                        </statement>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
