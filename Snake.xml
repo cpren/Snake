@@ -78,8 +78,78 @@
                                   <block type="controls_whileUntil" id="20" inline="false">
                                     <field name="MODE">WHILE</field>
                                     <value name="NUMBER">
-                                      <block type="math_number" id="21">
-                                        <field name="NUM">1</field>
+                                      <block type="logic_operation" id="113" inline="true">
+                                        <field name="OP">LAND</field>
+                                        <value name="A">
+                                          <block type="logic_compare" id="114" inline="true">
+                                            <field name="OP">LT</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="115">
+                                                <field name="VAR">y</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="116">
+                                                <field name="NUM">58</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="logic_operation" id="117" inline="true">
+                                            <field name="OP">LAND</field>
+                                            <value name="A">
+                                              <block type="logic_compare" id="118" inline="true">
+                                                <field name="OP">LT</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="119">
+                                                    <field name="VAR">x</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="120">
+                                                    <field name="NUM">120</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="logic_operation" id="121" inline="true">
+                                                <field name="OP">LAND</field>
+                                                <value name="A">
+                                                  <block type="logic_compare" id="122" inline="true">
+                                                    <field name="OP">GT</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="123">
+                                                        <field name="VAR">y</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="124">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="logic_compare" id="125" inline="true">
+                                                    <field name="OP">GT</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="126">
+                                                        <field name="VAR">x</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="127">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                     <statement name="DO">
@@ -477,7 +547,7 @@
                                               </block>
                                             </statement>
                                             <next>
-                                              <block type="oled_drawtext" id="112">
+                                              <block type="oled_drawtext" id="142">
                                                 <field name="TEXT">Death!</field>
                                               </block>
                                             </next>
