@@ -90,10 +90,21 @@
                                           </block>
                                         </value>
                                         <statement name="DO0">
-                                          <block type="controls_repeat" id="276" inline="true">
-                                            <value name="TIMES">
-                                              <block type="math_number" id="283">
-                                                <field name="NUM">5</field>
+                                          <block type="controls_whileUntil" id="369" inline="false">
+                                            <field name="MODE">WHILE</field>
+                                            <value name="NUMBER">
+                                              <block type="logic_compare" id="383" inline="true">
+                                                <field name="OP">LT</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="398">
+                                                    <field name="VAR">x</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="405">
+                                                    <field name="NUM">90</field>
+                                                  </block>
+                                                </value>
                                               </block>
                                             </value>
                                             <statement name="DO">
