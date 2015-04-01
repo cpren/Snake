@@ -1,19 +1,19 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="oled_cleardisplay" id="1" x="-88" y="-155">
     <next>
-      <block type="variables_set" id="2" inline="true">
-        <field name="VAR">y</field>
+      <block type="variables_set" id="4" inline="true">
+        <field name="VAR">x</field>
         <value name="VALUE">
-          <block type="math_number" id="3">
-            <field name="NUM">20</field>
+          <block type="math_number" id="5">
+            <field name="NUM">60</field>
           </block>
         </value>
         <next>
-          <block type="variables_set" id="4" inline="true">
-            <field name="VAR">x</field>
+          <block type="variables_set" id="2" inline="true">
+            <field name="VAR">y</field>
             <value name="VALUE">
-              <block type="math_number" id="5">
-                <field name="NUM">50</field>
+              <block type="math_number" id="3">
+                <field name="NUM">30</field>
               </block>
             </value>
             <next>
