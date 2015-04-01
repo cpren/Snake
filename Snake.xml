@@ -155,7 +155,7 @@
                 <field name="OP">LAND</field>
                 <value name="A">
                   <block type="logic_compare" id="467" inline="true">
-                    <field name="OP">LT</field>
+                    <field name="OP">GT</field>
                     <value name="A">
                       <block type="variables_get" id="468">
                         <field name="VAR">x</field>
@@ -163,7 +163,7 @@
                     </value>
                     <value name="B">
                       <block type="math_number" id="469">
-                        <field name="NUM">90</field>
+                        <field name="NUM">10</field>
                       </block>
                     </value>
                   </block>
