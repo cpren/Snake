@@ -361,7 +361,7 @@
                                             </value>
                                             <value name="B">
                                               <block type="math_number" id="98">
-                                                <field name="NUM">40</field>
+                                                <field name="NUM">60</field>
                                               </block>
                                             </value>
                                           </block>
