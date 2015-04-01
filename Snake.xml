@@ -23,65 +23,69 @@
               </block>
             </value>
             <next>
-              <block type="controls_repeat" id="115" inline="true">
-                <value name="TIMES">
-                  <block type="math_number" id="122">
-                    <field name="NUM">20</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="oled_setcursor" id="27" inline="true">
-                    <value name="STARTX">
-                      <block type="variables_get" id="144">
-                        <field name="VAR">x</field>
+              <block type="oled_cleardisplay" id="231">
+                <next>
+                  <block type="controls_repeat" id="115" inline="true">
+                    <value name="TIMES">
+                      <block type="math_number" id="122">
+                        <field name="NUM">20</field>
                       </block>
                     </value>
-                    <value name="STARTY">
-                      <block type="variables_get" id="150">
-                        <field name="VAR">y</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="oled_setend" id="59" inline="true">
-                        <value name="ENDX">
-                          <block type="math_arithmetic" id="157" inline="true">
-                            <field name="OP">ADD</field>
-                            <value name="A">
-                              <block type="variables_get" id="185">
-                                <field name="VAR">x</field>
-                              </block>
-                            </value>
-                            <value name="B">
-                              <block type="variables_get" id="199">
-                                <field name="VAR">size</field>
-                              </block>
-                            </value>
+                    <statement name="DO">
+                      <block type="oled_setcursor" id="27" inline="true">
+                        <value name="STARTX">
+                          <block type="variables_get" id="144">
+                            <field name="VAR">x</field>
                           </block>
                         </value>
-                        <value name="ENDY">
-                          <block type="math_arithmetic" id="214" inline="true">
-                            <field name="OP">ADD</field>
-                            <value name="A">
-                              <block type="variables_get" id="207">
-                                <field name="VAR">y</field>
-                              </block>
-                            </value>
-                            <value name="B">
-                              <block type="variables_get" id="222">
-                                <field name="VAR">size</field>
-                              </block>
-                            </value>
+                        <value name="STARTY">
+                          <block type="variables_get" id="150">
+                            <field name="VAR">y</field>
                           </block>
                         </value>
                         <next>
-                          <block type="oled_linerect" id="18">
-                            <field name="OBJECT">RECT</field>
+                          <block type="oled_setend" id="59" inline="true">
+                            <value name="ENDX">
+                              <block type="math_arithmetic" id="157" inline="true">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <block type="variables_get" id="185">
+                                    <field name="VAR">x</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="variables_get" id="199">
+                                    <field name="VAR">size</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ENDY">
+                              <block type="math_arithmetic" id="214" inline="true">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <block type="variables_get" id="207">
+                                    <field name="VAR">y</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="variables_get" id="222">
+                                    <field name="VAR">size</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_linerect" id="18">
+                                <field name="OBJECT">RECT</field>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
-                    </next>
+                    </statement>
                   </block>
-                </statement>
+                </next>
               </block>
             </next>
           </block>
