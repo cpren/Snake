@@ -262,6 +262,11 @@
                                 </statement>
                               </block>
                             </statement>
+                            <next>
+                              <block type="oled_drawtext" id="613">
+                                <field name="TEXT">Error</field>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
