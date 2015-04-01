@@ -125,6 +125,9 @@
                                                     </value>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="oled_cleardisplay" id="420"></block>
+                                                </next>
                                               </block>
                                             </statement>
                                           </block>
