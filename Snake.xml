@@ -164,7 +164,7 @@
                                           <block type="controls_if" id="157" inline="false">
                                             <value name="IF0">
                                               <block type="sensor_button" id="164">
-                                                <field name="OBJECT">UP</field>
+                                                <field name="OBJECT">DOWN</field>
                                               </block>
                                             </value>
                                             <statement name="DO0">
