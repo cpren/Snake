@@ -315,7 +315,7 @@
                                                     <field name="VAR">y</field>
                                                     <value name="VALUE">
                                                       <block type="math_arithmetic" id="89" inline="true">
-                                                        <field name="OP">ADD</field>
+                                                        <field name="OP">MINUS</field>
                                                         <value name="A">
                                                           <block type="variables_get" id="90">
                                                             <field name="VAR">y</field>
@@ -418,7 +418,7 @@
                                                         <field name="VAR">y</field>
                                                         <value name="VALUE">
                                                           <block type="math_arithmetic" id="111" inline="true">
-                                                            <field name="OP">MINUS</field>
+                                                            <field name="OP">ADD</field>
                                                             <value name="A">
                                                               <block type="variables_get" id="112">
                                                                 <field name="VAR">y</field>
