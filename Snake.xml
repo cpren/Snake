@@ -208,49 +208,25 @@
                                           <block type="oled_linerect" id="59">
                                             <field name="OBJECT">RECT</field>
                                             <next>
-                                              <block type="variables_set" id="60" inline="true">
+                                              <block type="variables_set" id="65" inline="true">
                                                 <field name="VAR">x</field>
                                                 <value name="VALUE">
-                                                  <block type="math_arithmetic" id="61" inline="true">
-                                                    <field name="OP">ADD</field>
+                                                  <block type="math_arithmetic" id="66" inline="true">
+                                                    <field name="OP">MINUS</field>
                                                     <value name="A">
-                                                      <block type="variables_get" id="62">
+                                                      <block type="variables_get" id="67">
                                                         <field name="VAR">x</field>
                                                       </block>
                                                     </value>
                                                     <value name="B">
-                                                      <block type="math_number" id="63">
+                                                      <block type="math_number" id="68">
                                                         <field name="NUM">1</field>
                                                       </block>
                                                     </value>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="oled_cleardisplay" id="64">
-                                                    <next>
-                                                      <block type="variables_set" id="65" inline="true">
-                                                        <field name="VAR">x</field>
-                                                        <value name="VALUE">
-                                                          <block type="math_arithmetic" id="66" inline="true">
-                                                            <field name="OP">MINUS</field>
-                                                            <value name="A">
-                                                              <block type="variables_get" id="67">
-                                                                <field name="VAR">x</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="B">
-                                                              <block type="math_number" id="68">
-                                                                <field name="NUM">1</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                        <next>
-                                                          <block type="oled_cleardisplay" id="69"></block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
+                                                  <block type="oled_cleardisplay" id="69"></block>
                                                 </next>
                                               </block>
                                             </next>
@@ -328,4 +304,5 @@
       </block>
     </next>
   </block>
+  <block type="oled_cleardisplay" id="64" x="462" y="511"></block>
 </xml>
