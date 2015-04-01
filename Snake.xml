@@ -476,6 +476,11 @@
                                                 </statement>
                                               </block>
                                             </statement>
+                                            <next>
+                                              <block type="oled_drawtext" id="112">
+                                                <field name="TEXT">Death!</field>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
