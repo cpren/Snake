@@ -88,7 +88,7 @@
                                           <block type="controls_if" id="248" inline="false">
                                             <value name="IF0">
                                               <block type="sensor_button" id="255">
-                                                <field name="OBJECT">DOWN</field>
+                                                <field name="OBJECT">RIGHT</field>
                                               </block>
                                             </value>
                                             <statement name="DO0">
