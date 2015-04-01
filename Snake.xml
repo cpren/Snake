@@ -1,34 +1,59 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="9" x="39" y="19">
+  <block type="variables_set" id="124" inline="true" x="-56" y="-12">
+    <field name="VAR">x</field>
+    <value name="VALUE">
+      <block type="math_number" id="34">
+        <field name="NUM">50</field>
+      </block>
+    </value>
     <next>
-      <block type="oled_setcursor" id="27" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="34">
+      <block type="variables_set" id="138" inline="true">
+        <field name="VAR">y</field>
+        <value name="VALUE">
+          <block type="math_number" id="41">
             <field name="NUM">20</field>
           </block>
         </value>
-        <value name="STARTY">
-          <block type="math_number" id="41">
-            <field name="NUM">50</field>
-          </block>
-        </value>
         <next>
-          <block type="oled_setend" id="59" inline="true">
-            <value name="ENDX">
-              <block type="math_number" id="66">
-                <field name="NUM">25</field>
+          <block type="controls_repeat" id="115" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="122">
+                <field name="NUM">20</field>
               </block>
             </value>
-            <value name="ENDY">
-              <block type="math_number" id="73">
-                <field name="NUM">55</field>
+            <statement name="DO">
+              <block type="oled_setcursor" id="27" inline="true">
+                <value name="STARTX">
+                  <block type="variables_get" id="144">
+                    <field name="VAR">x</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="variables_get" id="150">
+                    <field name="VAR">y</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_setend" id="59" inline="true">
+                    <value name="ENDX">
+                      <block type="math_number" id="66">
+                        <field name="NUM">25</field>
+                      </block>
+                    </value>
+                    <value name="ENDY">
+                      <block type="math_number" id="73">
+                        <field name="NUM">55</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_linerect" id="18">
+                        <field name="OBJECT">RECT</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
-            </value>
-            <next>
-              <block type="oled_linerect" id="18">
-                <field name="OBJECT">RECT</field>
-              </block>
-            </next>
+            </statement>
           </block>
         </next>
       </block>
