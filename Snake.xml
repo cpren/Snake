@@ -117,9 +117,14 @@
                             <next>
                               <block type="controls_if" id="477" inline="false">
                                 <value name="IF0">
-                                  <block type="logic_operation" id="458" inline="true">
-                                    <field name="OP">LAND</field>
-                                    <value name="A">
+                                  <block type="sensor_button" id="255">
+                                    <field name="OBJECT">RIGHT</field>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="controls_whileUntil" id="369" inline="false">
+                                    <field name="MODE">WHILE</field>
+                                    <value name="NUMBER">
                                       <block type="logic_compare" id="383" inline="true">
                                         <field name="OP">LT</field>
                                         <value name="A">
@@ -132,21 +137,6 @@
                                             <field name="NUM">90</field>
                                           </block>
                                         </value>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="sensor_button" id="255">
-                                        <field name="OBJECT">RIGHT</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <statement name="DO0">
-                                  <block type="controls_whileUntil" id="369" inline="false">
-                                    <field name="MODE">WHILE</field>
-                                    <value name="NUMBER">
-                                      <block type="math_number" id="484">
-                                        <field name="NUM">1</field>
                                       </block>
                                     </value>
                                     <statement name="DO">
@@ -177,9 +167,14 @@
                                 <next>
                                   <block type="controls_if" id="491" inline="false">
                                     <value name="IF0">
-                                      <block type="logic_operation" id="466" inline="true">
-                                        <field name="OP">LAND</field>
-                                        <value name="A">
+                                      <block type="sensor_button" id="470">
+                                        <field name="OBJECT">LEFT</field>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="controls_whileUntil" id="426" inline="false">
+                                        <field name="MODE">WHILE</field>
+                                        <value name="NUMBER">
                                           <block type="logic_compare" id="467" inline="true">
                                             <field name="OP">GT</field>
                                             <value name="A">
@@ -192,21 +187,6 @@
                                                 <field name="NUM">10</field>
                                               </block>
                                             </value>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="sensor_button" id="470">
-                                            <field name="OBJECT">LEFT</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <statement name="DO0">
-                                      <block type="controls_whileUntil" id="426" inline="false">
-                                        <field name="MODE">WHILE</field>
-                                        <value name="NUMBER">
-                                          <block type="math_number" id="498">
-                                            <field name="NUM">1</field>
                                           </block>
                                         </value>
                                         <statement name="DO">
