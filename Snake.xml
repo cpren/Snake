@@ -28,10 +28,11 @@
                   <block type="comment_comment" id="233">
                     <field name="TEXT">Creates Block</field>
                     <next>
-                      <block type="controls_repeat" id="115" inline="true">
-                        <value name="TIMES">
-                          <block type="math_number" id="122">
-                            <field name="NUM">20</field>
+                      <block type="controls_whileUntil" id="327" inline="false">
+                        <field name="MODE">WHILE</field>
+                        <value name="NUMBER">
+                          <block type="math_number" id="334">
+                            <field name="NUM">1</field>
                           </block>
                         </value>
                         <statement name="DO">
