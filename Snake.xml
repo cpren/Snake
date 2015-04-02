@@ -1242,6 +1242,11 @@
                                                                         </statement>
                                                                       </block>
                                                                     </statement>
+                                                                    <next>
+                                                                      <block type="oled_drawtext" id="594">
+                                                                        <field name="TEXT">Game Over!</field>
+                                                                      </block>
+                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
