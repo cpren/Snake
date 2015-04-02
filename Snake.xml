@@ -1240,13 +1240,92 @@
                                                                             </next>
                                                                           </block>
                                                                         </statement>
+                                                                        <next>
+                                                                          <block type="controls_if" id="601" inline="false">
+                                                                            <value name="IF0">
+                                                                              <block type="logic_operation" id="602" inline="true">
+                                                                                <field name="OP">LOR</field>
+                                                                                <value name="A">
+                                                                                  <block type="logic_compare" id="603" inline="true">
+                                                                                    <field name="OP">GT</field>
+                                                                                    <value name="A">
+                                                                                      <block type="variables_get" id="604">
+                                                                                        <field name="VAR">y</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <block type="variables_get" id="605">
+                                                                                        <field name="VAR">ymax</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="logic_operation" id="606" inline="true">
+                                                                                    <field name="OP">LOR</field>
+                                                                                    <value name="A">
+                                                                                      <block type="logic_compare" id="607" inline="true">
+                                                                                        <field name="OP">GT</field>
+                                                                                        <value name="A">
+                                                                                          <block type="variables_get" id="608">
+                                                                                            <field name="VAR">x</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="variables_get" id="609">
+                                                                                            <field name="VAR">xmax</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <block type="logic_operation" id="610" inline="true">
+                                                                                        <field name="OP">LOR</field>
+                                                                                        <value name="A">
+                                                                                          <block type="logic_compare" id="611" inline="true">
+                                                                                            <field name="OP">LT</field>
+                                                                                            <value name="A">
+                                                                                              <block type="variables_get" id="612">
+                                                                                                <field name="VAR">y</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="B">
+                                                                                              <block type="variables_get" id="613">
+                                                                                                <field name="VAR">ymin</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="logic_compare" id="614" inline="true">
+                                                                                            <field name="OP">LT</field>
+                                                                                            <value name="A">
+                                                                                              <block type="variables_get" id="615">
+                                                                                                <field name="VAR">x</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="B">
+                                                                                              <block type="variables_get" id="616">
+                                                                                                <field name="VAR">xmin</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO0">
+                                                                              <block type="oled_drawtext" id="594">
+                                                                                <field name="TEXT">Game Over!</field>
+                                                                              </block>
+                                                                            </statement>
+                                                                          </block>
+                                                                        </next>
                                                                       </block>
                                                                     </statement>
-                                                                    <next>
-                                                                      <block type="oled_drawtext" id="594">
-                                                                        <field name="TEXT">Game Over!</field>
-                                                                      </block>
-                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
