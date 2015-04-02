@@ -1322,6 +1322,9 @@
                                                                         <statement name="DO0">
                                                                           <block type="oled_drawtext" id="594">
                                                                             <field name="TEXT">Game Over!</field>
+                                                                            <next>
+                                                                              <block type="movement_stop" id="635"></block>
+                                                                            </next>
                                                                           </block>
                                                                         </statement>
                                                                       </block>
